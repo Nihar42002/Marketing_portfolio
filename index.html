@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeel Khairnar — Brand & Digital Marketing Specialist</title>
+<meta name="description" content="Independent brand and digital marketing specialist. Strategy, campaigns and growth systems for brands that refuse to be wallpaper.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23BF2718'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23F3E9D7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- icon set -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l2.2 8.8L23 12l-8.8 2.2L12 23l-2.2-8.8L1 12l8.8-2.2z"/></symbol>
+  <symbol id="i-ne" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18L18 6"/><path d="M8 6h10v10"/></g></symbol>
+  <symbol id="i-dn" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14"/><path d="M5 12l7 7 7-7"/></g></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4"/><path d="M5 11l7-7 7 7"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 4v16"/><path d="M4 12h16"/></g></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14"/><path d="M19 5L5 19"/></g></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 7"/></g></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></g></symbol>
+</svg>
+
+<div id="grain"></div>
+<div id="cur-dot"><div class="dot-in"></div></div>
+<div id="cur-ring"><div class="ring-in"></div></div>
+<div id="cur-label"><div class="cl-in"></div></div>
+
+<!-- loader — the red cover (no year) -->
+<div id="loader">
+  <div class="ld-top"><span>Zeel Khairnar — Portfolio</span><span>Portfolio</span></div>
+  <div class="ld-count"><span id="ldCount">000</span><span class="ld-pc">%</span></div>
+  <div class="ld-bar"><span id="ldBar"></span></div>
+</div>
+<noscript><style>#loader{display:none}</style></noscript>
+
+<!-- header -->
+<header class="hdr">
+  <a class="hdr-mark" href="#hero" data-scroll="#hero">ZK<sup>®</sup></a>
+  <nav class="hdr-nav">
+    <a href="#work" data-scroll="#work">Work</a>
+    <a href="#services" data-scroll="#services">Capabilities</a>
+    <a href="#about" data-scroll="#about">About</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="hdr-cv" href="resume.pdf" download="Zeel-Khairnar-Resume.pdf">Résumé <svg class="i"><use href="#i-dn"/></svg></a>
+    <a class="hdr-cta" href="#contact" data-scroll="#contact">Let’s talk</a>
+    <button id="menuBtn" aria-label="Toggle menu">Menu</button>
+  </div>
+</header>
+
+<!-- fullscreen menu (mobile) -->
+<nav id="menu" aria-hidden="true">
+  <div class="menu-inner">
+    <a href="#work" data-scroll="#work"><span class="mono accent">01</span>Work</a>
+    <a href="#services" data-scroll="#services"><span class="mono accent">02</span>Capabilities</a>
+    <a href="#about" data-scroll="#about"><span class="mono accent">03</span>About</a>
+    <a href="#contact" data-scroll="#contact"><span class="mono accent">04</span>Contact</a>
+  </div>
+  <div class="menu-foot mono">
+    <span>Vadodara, IN</span>
+    <a href="resume.pdf" download="Zeel-Khairnar-Resume.pdf">Résumé — PDF <svg class="i"><use href="#i-dn"/></svg></a>
+    <a href="mailto:zkhairnar999@gmail.com">zkhairnar999@gmail.com</a>
+  </div>
+</nav>
+
+<main>
+  <!-- ============ hero — cream band ============ -->
+  <section id="hero">
+    <div class="hero-stage">
+      <h1 class="hero-name">
+        <span class="hn-line"><span class="hn-word" data-chars>zeel</span><span class="hn-c k">©</span></span>
+        <span class="hn-mid">
+          <span class="hn-role"><em class="accent">—</em> brand &amp; digital marketing specialist</span>
+        </span>
+        <span class="hn-line hn-right"><span class="hn-word" data-chars>khairnar</span><span class="hn-d k">.</span></span>
+      </h1>
+    </div>
+    <div class="hero-foot">
+      <p class="hero-blurb">Independent brand &amp; digital marketing specialist. I build identities, campaigns
+        and growth systems for brands that refuse to be wallpaper — then I measure everything.</p>
+      <a class="scroll-cue mono" href="#work" data-scroll="#work">Scroll <svg class="i"><use href="#i-dn"/></svg></a>
+      <button class="stamp" data-scroll="#contact" data-cursor="SAY HI" data-magnet="0.3" aria-label="Go to contact">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circPath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <text><textPath href="#circPath">AVAILABLE FOR SELECT PROJECTS • SAY HELLO •</textPath></text>
+          <g class="stamp-core"><use href="#i-star" x="86" y="86" width="28" height="28"/></g>
+        </svg>
+      </button>
+    </div>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="tk-group" style="display:flex">
+          <span class="tk"><span class="tk-t">brand strategy</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">identity systems</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">campaigns</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">creative direction</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">content &amp; social</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">performance</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">web direction</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+        </div>
+        <div class="tk-group" style="display:flex" aria-hidden="true">
+          <span class="tk"><span class="tk-t">brand strategy</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">identity systems</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">campaigns</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">creative direction</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">content &amp; social</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">performance</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+          <span class="tk"><span class="tk-t">web direction</span><svg class="i tk-s"><use href="#i-star"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ manifesto — RED band ============ -->
+  <section id="manifesto" class="sec dark">
+    <div class="mani-grid">
+      <div>
+        <div class="mani-label"><span class="mono accent">( 01 )</span><span class="mono mut">Positioning</span></div>
+        <p class="mani-text" id="maniText">I turn <em>attention</em> into revenue. Strategy gives a brand its spine,
+          craft gives it a <em>pulse</em> — I deliver both, then measure everything. No invented metrics,
+          no borrowed swagger — just work that earns the scroll.</p>
+      </div>
+
+      <!-- the intro card — cream paper pinned to the red band -->
+      <aside class="mani-side">
+        <div class="intro-card" id="introCard" data-cursor="HELLO">
+          <div class="ic-tilt">
+            <span class="ic-stamp mono">Vadodara · Home</span>
+            <p class="ic-label mono">Your passport photo</p>
+            <figure class="ic-photo">
+              <svg class="ic-clip" aria-hidden="true"><use href="#i-clip"/></svg>
+              <img src="https://z-cdn-media.chatglm.cn/files/bc719efd-94ba-4b4b-9419-73accfd6634c.png?auth_key=1889923727-0f00fd9916594daeaca57aef5c072678-0-00193595f5daf3a2a5c3252d09a5850f" alt="Zeel Khairnar — off the clock, café">
+            </figure>
+            <dl class="ic-fields">
+              <div class="ic-row"><dt>Name</dt><dd class="hand">Zeel Khairnar</dd></div>
+              <div class="ic-row"><dt>Country</dt><dd class="hand">India</dd></div>
+              <div class="ic-row"><dt>Based in</dt><dd class="hand">Vadodara — always home</dd></div>
+              <div class="ic-row"><dt>Scope</dt><dd class="hand">Worldwide · Remote</dd></div>
+            </dl>
+            <p class="ic-status mono"><i class="dot-ping"></i>Open for select projects</p>
+            <div class="ic-story">
+              <p class="ic-q">Tell us about your story</p>
+              <p class="ic-note hand">Born and raised in Vadodara. Fell for marketing because it’s the
+                only job where a hinge can out-trend a phone launch — and I’ve been proving it ever since.</p>
+            </div>
+            <div class="ic-story">
+              <p class="ic-q">What’s a brand you wish you’d worked on?</p>
+              <p class="ic-note hand">The one that hasn’t called yet.</p>
+            </div>
+            <div class="ic-sign"><span class="hand">Zeel K.</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ work — cream band ============ -->
+  <section id="work" class="sec">
+    <header class="sec-head">
+      <div class="sec-top"><span class="mono accent">( 02 )</span><span class="mono mut">Three cases</span></div>
+      <h2 class="sec-title" data-reveal>Selected work</h2>
+      <div class="sec-rule"></div>
+    </header>
+    <div class="work-list" id="workList"></div>
+  </section>
+
+  <!-- ============ services — RED band ============ -->
+  <section id="services" class="sec dark">
+    <header class="sec-head">
+      <div class="sec-top"><span class="mono accent">( 03 )</span><span class="mono mut">Six disciplines, one brain</span></div>
+      <h2 class="sec-title" data-reveal>Capabilities</h2>
+      <div class="sec-rule"></div>
+    </header>
+    <div id="svcList">
+      <div class="svc open">
+        <button class="svc-head" aria-expanded="true">
+          <span class="svc-num">01</span><h3 class="svc-title">Brand Strategy &amp; Positioning</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">The sharp idea only you can own.</p>
+          <p class="svc-desc">Research, positioning, naming and messaging architecture that make every
+          downstream decision easier — from the pitch deck to the packaging tape.</p></div>
+          <p class="svc-deliv">Deliverables — Positioning · Naming · Brand architecture · Verbal identity · Messaging frameworks</p>
+        </div></div></div>
+      </div>
+      <div class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="svc-num">02</span><h3 class="svc-title">Identity Systems</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">A visual world built to flex.</p>
+          <p class="svc-desc">Logo, type and color systems designed to survive every touchpoint —
+          favicon to storefront — without losing the brand’s accent.</p></div>
+          <p class="svc-deliv">Deliverables — Logo &amp; type systems · Color · Art direction · Guidelines · Template kits</p>
+        </div></div></div>
+      </div>
+      <div class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="svc-num">03</span><h3 class="svc-title">Campaigns &amp; Creative Direction</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">Launch moments people talk about on Tuesday.</p>
+          <p class="svc-desc">From the big idea to the copy to the creator kits — campaigns engineered
+          to survive the week after launch day, not just the day itself.</p></div>
+          <p class="svc-deliv">Deliverables — Big idea · Creative concepts · Copy · Campaign toolkits · Influencer direction</p>
+        </div></div></div>
+      </div>
+      <div class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="svc-num">04</span><h3 class="svc-title">Content &amp; Social</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">Editorial systems that publish themselves.</p>
+          <p class="svc-desc">Content strategy and repeatable format design built for small in-house
+          teams — so the feed stays sharp long after I’m gone.</p></div>
+          <p class="svc-deliv">Deliverables — Content strategy · Editorial calendars · Format design · Community playbooks</p>
+        </div></div></div>
+      </div>
+      <div class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="svc-num">05</span><h3 class="svc-title">Performance &amp; Growth</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">Creativity that pays for itself.</p>
+          <p class="svc-desc">Full-funnel paid social and search, CRO and a testing cadence that compounds —
+          with dashboards the CFO can actually read.</p></div>
+          <p class="svc-deliv">Deliverables — Paid social &amp; search · Funnel design · CRO · Dashboards · Testing programs</p>
+        </div></div></div>
+      </div>
+      <div class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="svc-num">06</span><h3 class="svc-title">Web &amp; Digital Direction</h3>
+          <span class="svc-icon"><svg class="i"><use href="#i-plus"/></svg></span>
+        </button>
+        <div class="svc-body"><div class="svc-body-in"><div class="svc-cols">
+          <div><p class="svc-tag">Pages that read like a brand and convert like a landing page.</p>
+          <p class="svc-desc">UX direction, landing pages and design systems handed to developers with
+          zero ambiguity — plus the SEO foundations to feed them.</p></div>
+          <p class="svc-deliv">Deliverables — UX direction · Landing pages · Design systems for devs · SEO foundations</p>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ about — cream band ============ -->
+  <section id="about" class="sec">
+    <header class="sec-head">
+      <div class="sec-top"><span class="mono accent">( 04 )</span><span class="mono mut">Personal overview</span></div>
+      <h2 class="sec-title" data-reveal>About</h2>
+      <div class="sec-rule"></div>
+    </header>
+    <div class="about-grid">
+      <div>
+        <figure class="media about-portrait" data-parallax>
+          <img src="https://z-cdn-media.chatglm.cn/files/2ef0c9db-0d07-4760-baf3-1d1a835a0d43.png?auth_key=1889923727-719ada77211d418a94bf587d914da407-0-658359610750f852ea7a029633dbc86d" alt="Zeel Khairnar — on location, heritage site">
+        </figure>
+        <p class="about-cap">Z. Khairnar — on location</p>
+      </div>
+      <div>
+        <p class="about-lead">I’m Zeel — a brand and digital marketing specialist born and raised in Vadodara,
+          working across precision hardware, ad productions and fashion labels — thinking like the
+          marketing desk, and just as happy holding the camera.</p>
+        <p class="about-p">My work lives where strategy meets craft. One week I’m writing the positioning document,
+          the next I’m on a shoot set keeping the day on schedule, the next I’m inside an ads manager
+          rebuilding a funnel. Small teams love that range; big teams borrow me for it.</p>
+        <p class="about-p">I work from Vadodara with a small circle of collaborators — designers, developers,
+          editors — taking on a handful of launches, rebrands and growth systems a year.
+          If it needs to be sharp and it needs to work, I’m interested.</p>
+
+        <!-- individual competencies: hand-drawn frame of paper-sticker certifications -->
+        <div class="comp-box">
+          <span class="comp-title">individual competencies</span>
+          <div class="cert-grid">
+            <div class="cert">
+              <span class="cert-star"><svg class="i"><use href="#i-star"/></svg></span>
+              <p class="cert-issuer">Google · Coursera</p>
+              <h6 class="cert-name">Digital Marketing &amp; E-Commerce</h6>
+              <p class="cert-tags">SEO · SEM · Email Marketing · E-Commerce Strategy</p>
+            </div>
+            <div class="cert">
+              <span class="cert-star"><svg class="i"><use href="#i-star"/></svg></span>
+              <p class="cert-issuer">Google</p>
+              <h6 class="cert-name">Google Ads Certification</h6>
+              <p class="cert-tags">Search · Display · Video · Campaign Measurement</p>
+            </div>
+            <div class="cert">
+              <span class="cert-star"><svg class="i"><use href="#i-star"/></svg></span>
+              <p class="cert-issuer">Coursera</p>
+              <h6 class="cert-name">Meta Ads Manager for Beginners: GenAI</h6>
+              <p class="cert-tags">Meta Ads Manager · Paid Social · GenAI Workflows</p>
+            </div>
+            <div class="cert">
+              <span class="cert-star"><svg class="i"><use href="#i-star"/></svg></span>
+              <p class="cert-issuer">IIT Roorkee</p>
+              <h6 class="cert-name">Brand Management</h6>
+              <p class="cert-tags">Brand Strategy · Positioning · Brand Equity</p>
+            </div>
+          </div>
+        </div>
+        <p class="comp-note">certified — not just curious <svg class="i"><use href="#i-ne"/></svg></p>
+
+        <p class="clients">Selected clients — Sugatsune India · Dream Vox Studios · Oragraphy · Sequinze</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ contact — red cover ============ -->
+<footer id="contact" class="dark">
+  <p class="avail mono"><i class="dot-ping"></i>Available for new projects</p>
+  <p class="contact-kicker">Have a brand that deserves better than “fine”?</p>
+  <a class="contact-title" href="mailto:zkhairnar999@gmail.com" data-magnet="0.16" data-cursor="EMAIL">
+    Let’s talk<span class="accent">.</span><svg class="i"><use href="#i-ne"/></svg>
+  </a>
+  <p class="contact-note">— no forms, no funnels. just email <svg class="i"><use href="#i-dn"/></svg></p>
+  <button class="email-copy" id="emailCopy" data-cursor="COPY">
+    <span class="mono mut">Email</span>
+    <span class="email-addr">zkhairnar999@gmail.com</span>
+    <svg class="i"><use href="#i-copy"/></svg>
+  </button>
+  <a class="cv-download" href="resume.pdf" download="Zeel-Khairnar-Resume.pdf" data-cursor="SAVE">
+    <span class="mono mut">Résumé</span>
+    <span class="cv-name">Zeel Khairnar — Digital Marketing &amp; Brand Specialist</span>
+    <span class="cv-meta mono">Download PDF <svg class="i"><use href="#i-dn"/></svg></span>
+  </a>
+  <div class="foot-grid">
+    <ul class="foot-list">
+      <li class="mono mut" style="margin-bottom:.9rem">Elsewhere</li>
+      <li><a href="https://www.linkedin.com/in/zeel-khairnar-892a642b4" target="_blank" rel="noopener">LinkedIn <svg class="i"><use href="#i-ne"/></svg></a></li>
+      <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram <svg class="i"><use href="#i-ne"/></svg></a></li>
+      <li><a href="https://www.behance.net/zeelkhairnar" target="_blank" rel="noopener">Behance <svg class="i"><use href="#i-ne"/></svg></a></li>
+    </ul>
+    <button id="backTop" data-scroll="#hero" data-cursor="TOP" data-magnet="0.4" aria-label="Back to top">
+      <svg class="i"><use href="#i-up"/></svg>
+    </button>
+  </div>
+  <div class="foot-bottom">
+    <span>Zeel Khairnar — All rights reserved</span>
+    <span>Designed &amp; written by hand. No templates were harmed.</span>
+  </div>
+</footer>
+
+<!-- floating project preview -->
+<div id="preview"><div class="pv-in"><div class="pv-cap"></div></div></div>
+
+<!-- case study overlay — data-lenis-prevent tells Lenis to leave its scroller alone -->
+<div id="case" role="dialog" aria-modal="true" aria-label="Case study">
+  <div class="case-scroll" data-lenis-prevent tabindex="-1"><div class="case-body"></div></div>
+</div>
+
+<!-- toast -->
+<div id="toast" role="status"><svg class="i"><use href="#i-check"/></svg><span id="toastMsg"></span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
